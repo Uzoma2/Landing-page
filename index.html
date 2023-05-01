@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Lifestyle Tips</title>
+    <style>
+      h1 {
+        color: #034a7d;
+        font-size: 50px;
+        font-weight: 900;
+        border: 1px solid #034a7d;
+        border-radius: 10px;
+        padding: 10px 15px 10px 15px;
+      }
+
+      h2 {
+        color: #034a7d;
+        font-size: 35px;
+        font-weight: 400;
+      }
+
+      img {
+        border-radius: 20px;
+        max-width: 80%;
+        margin: 5px 0px 5px 0px;
+      }
+      p {
+        font-size: 25px;
+      }
+      span {
+        font-weight: bold;
+      }
+      a {
+        display: block;
+        text-align: left;
+        color: #034a7d;
+        text-decoration: none;
+      }
+      button {
+        font-size: 20px;
+        font-weight: 200;
+        display: block;
+        margin: 20px auto;
+        padding: 10px 15px 10px 15px;
+        border: 1px solid #034a7d;
+        border-radius: 10px;
+        background-color: #034a7d;
+        color: #ffffff;
+        transition: all 200ms ease-in-out;
+        box-shadow: 3px 3px 5px rgba(77, 63, 63, 0.3);
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: #ffffff;
+        color: #034a7d;
+      }
+      .container {
+        background-image: linear-gradient(
+            to bottom,
+            #69695b80,
+            rgba(218, 218, 243, 0.5)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/430/original/bigstock-Water-Background-15132620-e1533208938636.jpg?1677573368");
+
+        text-align: center;
+        background-repeat: no-repeat;
+        max-width: 50%;
+        margin: 0 auto;
+        max-height: 100%;
+        background-size: cover;
+        padding: 20px 20px;
+        border-radius: 20px;
+      }
+      .footer {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Healthy Lifestyle Tips</h1>
+      <h2>Stay hydrated</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/424/original/drink-water.jpg?1677572381"
+      />
+      <hr />
+      <p>
+        <span>Staying hydrated</span> by getting enough water every day is
+        important for your health. <strong>Drinking water</strong> can prevent
+        dehydration, a condition that can cause unclear thinking, result in mood
+        change, cause your body to overheat, and lead to constipation and kidney
+        stones. Water has no calories, so it can also help with managing body
+        weight and reducing calorie intake when substituted for drinks with
+        calories, such as sweet tea or regular soda.
+      </p>
+      <a
+        href="https://www.cdc.gov/healthyweight/healthy_eating/water-and-healthier-drinks.html"
+        target="_blank"
+        >More benefits of staying hydrated</a
+      >
+      <button>SUBCRIBE FOR MORE TIPS</button>
+      This page was built by
+
+      <em
+        ><a
+          href="https://www.linkedin.com/in/uzoma-udeagwu"
+          class="footer"
+          target="_blank"
+          >Uzoma Udeagwu</a
+        ></em
+      >
+    </div>
+    <script>
+      function getTips() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          `Thank you ${name} for subscribing. More tips will be sent to ${email}. Stay healthy!!!`
+        );
+      }
+
+      let subscribe = document.querySelector("button");
+      subscribe.addEventListener("click", getTips);
+    </script>
+  </body>
+</html>
